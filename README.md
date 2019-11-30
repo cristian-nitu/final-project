@@ -81,7 +81,7 @@ lab_MEDV = 'Median value of owner-occupied homes in $1000 '
 
 df.columns = ['CRIM', 'ZN', 'INDUS', 'CHAS', 'NOX', 'RM', 'AGE', 'DIS', 'RAD', 'TAX', 'PTRATIO', 'B', 'LSTAT', 'MEDV']
 
-# TODO:Creating figure
+# Creating figure
 
 prices = df.drop('MEDV', axis=1)
 features = df['MEDV']
