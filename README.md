@@ -23,10 +23,10 @@ Our research is to create a working model that will have the capability to predi
 Data exploration
 
 Exploratory Data Analysis is a very important step before training the model. MEDV it is the target and we will plot the distribution of the target to understand the connection with the features.
-![Matrix](./figures/price_distribution.png)
+![Matrix](./fIgures/price_distribution.png)
 
 Next we are creating a correlation matrix that measures the linear relationships between the variables. The correlation coefficient ranges from -1 to 1. If the value is close to 1, it means that there is a strong positive correlation between the two variables. When it is close to -1, the variables have a strong negative correlation
-![Matrix](./figures/correlation_matrix.png)
+![Matrix](./fIgures/correlation_matrix.png)
 
 After exploring the data our research cannot use NOX (-0.43) or INDUS (-0.48) because both of them have high negative correlation with MEDV.
 To fit a linear regression model, we select those features which have a high correlation with our target variable MEDV. 
@@ -139,9 +139,10 @@ R2 score : 0.6882607142538019
 To measure the model’s performance we will calculate the coefficient of determination R2.
 
 
-![Matrix](./figures/prices_pred_price.png)
+![Matrix](./fIgures/prices_pred_price.png)
 
 Conclusion
+
 Our project been looking to find what are the environmental factors that influence the price of houses in Boston but we cannot answer.
 The created model could provide a prediction of prices but we did not have any feature that could predict how the prices will affected by the global warming.
 
