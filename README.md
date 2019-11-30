@@ -43,7 +43,7 @@ To measure the model’s performance we will calculate the coefficient of determ
 
 R2 = 0.6882607142538019
 
-![Matrix](./fIgures/prices_pred_price.png)
+![Image descrition](./fIgures/prices_pred_price.png)
 
 Conclusion
 
