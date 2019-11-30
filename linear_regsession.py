@@ -27,8 +27,8 @@ features = df['MEDV']
 
 # TODO:splitting the dataset into : train and test
 
-x_train, x_test, y_train, y_test = train_test_split(prices, features, test_size  = 0.4 , random_state = 0)
-#TODO 0.40 means 40%  of the dataset
+x_train, x_test, y_train, y_test = train_test_split(prices, features, test_size  = 0.2 , random_state = 0)
+#TODO 0.20 means 20%  of the dataset
 
 lm = LinearRegression()
 lm.fit(x_train, y_train)
@@ -42,7 +42,7 @@ print(f"Named Coeficients: {pd.DataFrame(lm.coef_,),features}")
 Y_pred = lm.predict(x_test)
 
 plt.scatter(y_test, Y_pred)
-plt.xlabel("Prices: $Y_i$")
-plt.ylabel("Predicted prices: $\hat{Y}_i$")
+plt.xlabel("Real Prices: $X_i$")
+plt.ylabel("Predicted Prices: $\hat{Y}_i$")
 plt.title("Prices vs Predicted prices: $Y_i$ vs $\hat{Y}_i$")
-plt.savefig('prices_pred_price.png')
+plt.savefig('figures/prices_pred_price.png')

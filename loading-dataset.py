@@ -88,7 +88,7 @@ print(f'target: {boston_house.target}')
 print(f'feature_names: {boston_house.feature_names}')
 
 
-# c Rebuilding pandas DF from dataset (for plotting and statistical facts)
+# TODO c Rebuilding pandas DF from dataset (for plotting and statistical facts)
 convert_to_df = pd.DataFrame(data=np.c[boston_house.data, boston_house.target], columns=boston_house.feature_names + ['target'])
 print(convert_to_df.describe())
 

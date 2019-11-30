@@ -14,6 +14,7 @@ from sklearn.linear_model import LinearRegression
 
 import seaborn as sns
 
+
 # TODO:Loading dataset
 df = pd.read_csv('data/boston/housing.data',
              sep='\s+',
@@ -49,7 +50,7 @@ print(f'Dataset y shape: {features.shape}')
 
 # splitting the dataset into : train and test
 
-x_train, x_test, y_train, y_test = train_test_split(prices, features, test_size  = 0.4 , random_state = 0)
+x_train, x_test, y_train, y_test = train_test_split(prices, features, test_size  = 0.2 , random_state = 0)
 #0.40 means 40%  of the dataset
 
 print(x_train.shape)
@@ -85,6 +86,11 @@ print(f"Printing MAE error(avg abs residual): {metrics.mean_absolute_error(y_tes
 print(f"Printing MSE error(mean squared error): {metrics.mean_squared_error(y_test, predicted_values)}")
 print(f"Printing RMSE error(root-mean-square error): {np.sqrt(metrics.mean_squared_error(y_test, predicted_values))}")
 print(f"R2 score : {metrics.r2_score(y_test, predicted_values)}")
+
+
+
+
+
 
 
 

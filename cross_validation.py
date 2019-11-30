@@ -36,21 +36,21 @@ df.columns = ['CRIM', 'ZN', 'INDUS', 'CHAS', 'NOX', 'RM', 'AGE', 'DIS', 'RAD', '
 
 # Creating figure
 
-X = df.drop('NOX', axis=1)
-y = df['NOX']
+X = df.drop('MEDV', axis=1)
+y = df['MEDV']
 
-    print(f 'Dataset x shape: {X.shape}')
-    print(f'Dataset y shape: {y.shape}')
+#print(f 'Dataset x shape: {x.shape}')
+#print(f'Dataset y shape: {y.shape}')
 
-    x_train, x_test, y_train, y_test = train_test_split(X, y, test_size  = 0.4 , random_state = 0)
-    print(x_train.shape)
-    print(x_test.shape)
-    print(y_train.shape)
+x_train, x_test, y_train, y_test = train_test_split(x, y, test_size  = 0.4 , random_state = 0)
+print(x_train.shape)
+print(x_test.shape)
+print(y_train.shape)
 print(y_test.shape)
 
 
-clf = svm.SVC(kernel='linear' ,C=1).fit(X_train, y_train)
-clf.score(X_test, y_test)
+#clf = svm.SVC(kernel='linear' ,C=1).fit(x_train, y_train)
+#clf.score(x_test, y_test)
 
 
 
