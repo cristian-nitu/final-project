@@ -58,7 +58,7 @@ from sklearn.linear_model import LinearRegression
 import seaborn as sns
 
 
-# TODO:Loading dataset
+# Loading dataset
 df = pd.read_csv('data/boston/housing.data',
              sep='\s+',
               header=None)
@@ -99,27 +99,27 @@ print(x_test.shape)
 print(y_train.shape)
 print(y_test.shape)
 
-# TODO: Print splited the dataset
+# Print splited the dataset
 
 print(f"x_train.shape: {x_train.shape}, y_train.shape: {y_train.shape}")
 print(f"x_test.shape: {x_test.shape}, y_test.shape: {y_test.shape}")
 
-# TODO- Splitting features and target datasets into: train and test
+# -Splitting features and target datasets into: train and test
 
 x_train, x_test, y_train, y_test = train_test_split(prices, features, test_size  = 0.40 , random_state = 0)
-#Todo 0.40 means 40%  of the dataset
+#0.40 means 40%  of the dataset
 
 lm = LinearRegression()
 lm.fit(x_train, y_train)
 
-# TODO- Predicting the results for our test dataset
+# Predicting the results for our test dataset
 predicted_values = lm.predict(x_test)
 
-#  TODO - Printing the residuals: difference between real and predicted
+#  - Printing the residuals: difference between real and predicted
 for (real, predicted) in list(zip(y_test, predicted_values)):
      print(f'Value: {real}, pred: {predicted} {"is different" if real != predicted else ""}')
 
-# TODO Printing accuracy score(mean accuracy) from 0 - 1
+#  Printing accuracy score(mean accuracy) from 0 - 1
 print(f'Accuracy score is {lm.score(x_test, y_test):.2f}/1 \n')
 #
 from sklearn import metrics
