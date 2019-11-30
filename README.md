@@ -123,6 +123,7 @@ for (real, predicted) in list(zip(y_test, predicted_values)):
 print(f'Accuracy score is {lm.score(x_test, y_test):.2f}/1 \n')
 #
 from sklearn import metrics
+
 print(f"Printing MAE error(avg abs residual): {metrics.mean_absolute_error(y_test, predicted_values)}")
 print(f"Printing MSE error(mean squared error): {metrics.mean_squared_error(y_test, predicted_values)}")
 print(f"Printing RMSE error(root-mean-square error): {np.sqrt(metrics.mean_squared_error(y_test, predicted_values))}")
