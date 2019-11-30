@@ -39,14 +39,9 @@ Methods
 We are going to use a linear regression model with MEDV as the dependent variable and all the others variable as independent variables.
 The data will be split into training and testing sets and we train the model with 40% of the data and test with the remaining 60%. 
 
-Printing MAE error(avg abs residual): 3.633127374024617
-Printing MSE error(mean squared error): 25.79036215070245
-Printing RMSE error(root-mean-square error): 5.078421226198399
-R2 score : 0.6882607142538019
-R2 score : 0.6882607142538019
------------------------------------------------------------------------------------------------------
 To measure the model’s performance we will calculate the coefficient of determination R2.
 
+R2 = 0.6882607142538019
 
 ![Matrix](./fIgures/prices_pred_price.png)
 
