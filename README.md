@@ -48,7 +48,7 @@ R2 = 0.6882607142538019
 Conclusion
 
 Our project been looking to find what are the environmental factors that influence the price of houses in Boston but we cannot answer.
-The created model could provide a prediction of prices but we did not have any feature that could predict how the prices will affected by the global warming.
+The created model could provide a prediction of prices but we did not have any feature that could predict how the prices will be affected by the global warming.
 
 
 References
